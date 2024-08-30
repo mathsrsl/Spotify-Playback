@@ -46,7 +46,7 @@ Follow the instructions below to build and install the application on your devic
 #### 1. Clone the repository
 
 ```bash
-git clone ...
+git clone https://github.com/mathsrsl/Spotify-Playback.git
 ```
 
 #### 2. Open the project in Android Studio
