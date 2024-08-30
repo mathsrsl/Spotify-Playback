@@ -40,6 +40,7 @@ Follow the instructions below to build and install the application on your devic
 
 - [Android Studio](https://developer.android.com/studio)
 - [Spotify Developer account](https://developer.spotify.com/)
+- Android 7+ device
 
 ### Build the project
 
