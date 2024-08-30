@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTheme">
+        <!-- Custom attributes for home page colors -->
+        <attr name="textInputBackground" format="color" />
+        <attr name="textInputHint" format="color" />
+        <attr name="textInputStroke" format="color" />
+        <attr name="textInputStrokeFocused" format="color" />
+
+        <!-- Custom attributes for grayed text color -->
+        <attr name="grayedText" format="color" />
+
+        <!-- Custom attributes for separator color -->
+        <attr name="separator" format="color" />
+
+        <!-- Custom attributes for toast style colors -->
+        <attr name="toastBackground" format="color" />
+        <attr name="toastTextColor" format="color" />
+
+        <!-- Custom attributes for dialog style colors -->
+        <attr name="dialogBackground" format="color" />
+        <attr name="dialogTextColors" format="color" />
+        <attr name="dialogPositiveBackground" format="color" />
+        <attr name="dialogPositiveTextColor" format="color" />
+
+        <!-- Custom attributes for confirm button style colors -->
+        <attr name="confirmButtonBackground" format="color" />
+        <attr name="confirmButtonTextColor" format="color" />
+
+        <!-- Custom attributes for disconnect button style colors -->
+        <attr name="disconnectButtonBackground" format="color" />
+        <attr name="disconnectButtonTextColor" format="color" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for the player activity - Tablet version -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:id="@+id/layoutPlayer" >
+
+    <!-- Artist image in background -->
+    <ImageView
+        android:contentDescription="@string/content_artiste_background"
+        android:id="@+id/imageBackArtist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Darken view -->
+    <View
+        android:id="@+id/darkenView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/onyx_black" />
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:id="@+id/toolbarContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp" >
+
+        <!-- Device name -->
+        <TextView
+            android:id="@+id/deviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cloud_grey"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp" />
+
+        <!-- settings button -->
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:contentDescription="@string/content_settings"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="6dp"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:background="@drawable/button_background"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_settings_icon" />
+    </LinearLayout>
+
+    <!-- ProgressBar volume -->
+    <ProgressBar
+        android:id="@+id/volumeBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/seekbar_style"
+        android:rotation="-90"
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:max="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="-90dp" />
+
+    <!-- Title and artist -->
+    <LinearLayout
+        android:id="@+id/titleArtistContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/imageMusic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1" >
+
+        <!-- Title -->
+        <TextView
+            android:contentDescription="@string/content_title_song"
+            android:id="@+id/trackTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="400dp"
+            android:minWidth="100dp"
+
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <!-- Artist -->
+        <TextView
+            android:contentDescription="@string/content_artiste"
+            android:id="@+id/trackArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="300dp"
+            android:minWidth="100dp"
+            android:layout_marginTop="5dp"
+
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+
+            android:text=""
+
+            android:textColor="@color/mist_grey"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Album cover -->
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.5"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="20dip"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/titleArtistContainer"
+        app:layout_constraintBottom_toTopOf="@id/guideline_bottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Guideline to separate the album cover from the bottom buttons -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_width="0dp" />
+
+    <!-- Progress bar -->
+    <LinearLayout
+        android:id="@+id/progressBarContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintWidth_percent="0.85"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_bottom"
+        app:layout_constraintBottom_toTopOf="@id/buttonContainer"
+        app:layout_constraintHorizontal_bias="0.5" >
+
+        <!-- Time section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" >
+
+            <!-- Current time -->
+            <TextView
+                android:id="@+id/progressTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_time_progress_init"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <!-- Total time -->
+            <TextView
+                android:id="@+id/totalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/text_time_progress_init"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- Constraint Layout to prevent the touch of the bar from moving other elements -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="18dp" >
+
+            <!-- Progress bar -->
+            <SeekBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxHeight="4dp"
+
+                android:progress="0"
+                android:max="1000"
+
+                android:progressDrawable="@drawable/seekbar_style"
+                android:thumb="@drawable/transparent_thumb"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <!-- Buttons -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" >
+
+        <!-- Shuffle button -->
+        <ImageButton
+            android:id="@+id/imageShuffleButton"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="6dp"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_background"
+            android:contentDescription="@string/content_shuffle"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_shuffle_off"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imagePreviousButton" />
+
+        <!-- Previous button -->
+        <ImageButton
+            android:id="@+id/imagePreviousButton"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="6dp"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:background="@drawable/button_background"
+            android:contentDescription="@string/content_skip_previous"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_skip_previous"
+            app:layout_constraintStart_toEndOf="@id/imageShuffleButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imagePlayPauseButton" />
+
+        <!-- Play/Pause button -->
+        <ImageButton
+            android:id="@+id/imagePlayPauseButton"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="6dp"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:background="@drawable/button_background"
+            android:contentDescription="@string/content_play_pause"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_play_circle"
+            app:layout_constraintStart_toEndOf="@id/imagePreviousButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imageNextButton" />
+
+        <!-- Next button -->
+        <ImageButton
+            android:id="@+id/imageNextButton"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="6dp"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:background="@drawable/button_background"
+            android:contentDescription="@string/content_skip_next"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_skip_next"
+            app:layout_constraintStart_toEndOf="@id/imagePlayPauseButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imageLikeButton" />
+
+        <!-- Like button -->
+        <ImageButton
+            android:id="@+id/imageLikeButton"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="6dp"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:background="@drawable/button_background"
+            android:contentDescription="@string/content_like"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_like_off"
+            app:layout_constraintStart_toEndOf="@id/imageNextButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- Heart animation, at the end to superpose the other elements -->
+    <!-- Use a FrameLayout to change the position of the heart correctly -->
+    <FrameLayout
+        android:id="@+id/heart_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/heart_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_likeAnimation"
+            android:src="@drawable/ic_heart"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

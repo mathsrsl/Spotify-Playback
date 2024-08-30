@@ -1,0 +1,56 @@
+<resources>
+    <!-- #### Application and activity names #### -->
+    <string name="app_name">Spotify Playback</string>
+    <string name="title_activity_player">Player</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- ########### Application text ########### -->
+    <!-- home page -->
+    <string name="text_main_title">Enter your client ID</string>
+    <string name="text_home_explain_text">Create a new application to the spotify dashboard with the following information:</string>
+    <string name="text_home_explain_step1"><b>1.</b> Redirect URI: <i><u>com.example.spotifyplayback://callback</u></i></string>
+    <string name="text_home_explain_step2"><b>2.</b> Android package name: <i><u>com.example.spotifyplayback</u></i></string>
+    <string name="text_home_explain_step3"><b>3.</b> API used: <i>Android</i></string>
+    <string name="text_client_id_hint">Enter client ID here</string>
+    <string name="text_copy_to_clipboard">"Copy the link to clipboard "</string>
+    <string name="text_button_submit_activity_main">Login</string>
+
+    <!-- player page -->
+    <string name="text_noTrackPlaying">No playback in progress</string>
+    <string name="text_initializing">Starting spotify…</string>
+    <string name="text_loading">Loading…</string>
+    <string name="text_noInternet">No internet connection</string>
+    <string name="text_time_progress_init">--:--</string>
+
+    <!-- settings page -->
+    <string name="text_full_screen_option">Full screen player</string>
+    <string name="text_hide_controls_option">Hide controls automatically</string>
+    <string name="text_hide_controls_info">Hide control buttons and progress bar after a certain time.</string>
+    <string name="text_hide_controls_caution"><i>(caution: if the option is deactivated, it may eventually damage the screen, as there is no screen-burn protection)</i></string>
+    <string name="text_application_theme_option">Application theme</string>
+    <string name="text_control_display_times_option">Hide after</string>
+    <string name="text_blur_background_option">Add blur to the background</string>
+    <string name="text_disconnect_option">Disconnect</string>
+    <string name="text_size_of_cache">Size of the cache</string>
+    <string name="text_clear_cache">Clear cache</string>
+    <string name="text_control_blur_option">Blur intensity</string>
+    <string name="text_darken_background_option">Background darkening</string>
+    <string name="text_horizontal_swipe_option">Allows swiping to skip music</string>
+    <string name="text_horizontal_swipe_description">You can skip to the previous or next track with a simple right or left movement</string>
+    <string name="text_vertical_swipe_option">Control volume by sliding</string>
+    <string name="text_volume_control_description">If the remote device is compatible, you can control its volume by sliding up or down the screen</string>
+    <string name="text_double_tap_like_option">Double tap to like</string>
+    <string name="text_double_tap_like_description">Double-tap anywhere on the screen to like a track. If enabled, this may induce latency on the single tap</string>
+
+    <!-- ######### Content description ########## -->
+    <string name="content_shuffle">Shuffle feature</string>
+    <string name="content_skip_next">Next song</string>>
+    <string name="content_skip_previous">Previous song</string>
+    <string name="content_title_song">Title song</string>
+    <string name="content_like">Like feature</string>
+    <string name="content_artiste">Artiste name</string>
+    <string name="content_play_pause">Play/pause feature</string>
+    <string name="content_artiste_background">Artist image</string>
+    <string name="content_settings">Settings feature</string>
+    <string name="content_likeAnimation">Like animation</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="off_white">#F5F5F5</color>
+    <color name="charcoal_grey">#333333</color>
+    <color name="medium_grey">#757575</color>
+    <color name="light_grey">#E0E0E0</color>
+    <color name="crimson_red">#D32F2F</color>
+
+    <color name="ebony">#121212</color>
+    <color name="light_silver">#E0E0E0</color>
+    <color name="slate_grey">#B4BABD</color>
+    <color name="ash_grey">#1E1E1E</color>
+    <color name="gunmetal">#465056</color>
+    <color name="light_crimson">#EF5350</color>
+
+    <color name="pure_white">#FFFFFF</color>
+    <color name="mid_grey">#FF8e8e8e</color>
+    <color name="onyx_black">#FF000000</color>
+    <color name="cloud_grey">#BCBCBC</color>
+    <color name="mist_grey">#E7E7E7</color>
+</resources>
+

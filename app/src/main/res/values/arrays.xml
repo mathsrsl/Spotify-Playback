@@ -1,0 +1,8 @@
+<resources>
+    <!-- Array of items for the application theme spinner -->
+    <string-array name="application_theme_spinner_items">
+        <item>System default</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+</resources>

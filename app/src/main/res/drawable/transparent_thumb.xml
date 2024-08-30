@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Transparent thumb for the seekbar -->
+<!-- Use when the seekbar isn't touched -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <size android:width="0dp" android:height="0dp" /> <!-- no size -->
+    <solid android:color="@android:color/transparent"/> <!-- Transparent color -->
+</shape>

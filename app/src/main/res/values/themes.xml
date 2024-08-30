@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ########## Color theme ########## -->
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorAccent">@color/charcoal_grey</item>
+        <item name="android:windowBackground">@color/off_white</item>
+        <item name="android:textColor">@color/charcoal_grey</item>
+        <item name="spinnerStyle">@style/CustomSpinnerStyle.Light</item>
+        <item name="seekBarStyle">@style/CustomSeekBar.Light</item>
+        <item name="switchStyle">@style/CustomSwitch.Light</item>
+        <item name="alertDialogTheme">@style/CustomDialogStyle</item>
+
+        <!-- Custom attributes -->
+        <item name="grayedText">@color/medium_grey</item>
+        <item name="separator">@color/light_grey</item>
+
+        <item name="confirmButtonBackground">@color/charcoal_grey</item>
+        <item name="confirmButtonTextColor">@color/light_silver</item>
+
+        <item name="disconnectButtonBackground">@color/crimson_red</item>
+        <item name="disconnectButtonTextColor">@color/off_white</item>
+
+        <item name="toastBackground">@color/charcoal_grey</item>
+        <item name="toastTextColor">@color/light_silver</item>
+
+        <item name="dialogBackground">@color/off_white</item>
+        <item name="dialogTextColors">@color/charcoal_grey</item>
+        <item name="dialogPositiveBackground">@color/charcoal_grey</item>
+        <item name="dialogPositiveTextColor">@color/off_white</item>
+    </style>
+
+    <!-- Light theme -->
+    <style name="AppTheme.Light" parent="AppTheme" />
+
+    <!-- Dark theme -->
+    <style name="AppTheme.Dark" parent="AppTheme">
+        <item name="colorAccent">@color/light_silver</item>
+        <item name="android:windowBackground">@color/ebony</item>
+        <item name="android:textColor">@color/light_silver</item>
+        <item name="spinnerStyle">@style/CustomSpinnerStyle.Dark</item>
+        <item name="switchStyle">@style/CustomSwitch.Dark</item>
+        <item name="alertDialogTheme">@style/CustomDialogStyle</item>
+
+        <!-- Custom attributes -->
+        <item name="grayedText">@color/slate_grey</item>
+        <item name="separator">@color/gunmetal</item>
+
+        <item name="confirmButtonBackground">@color/charcoal_grey</item>
+        <item name="confirmButtonTextColor">@color/light_silver</item>
+
+        <item name="disconnectButtonBackground">@color/light_crimson</item>
+        <item name="disconnectButtonTextColor">@color/pure_white</item>
+
+        <item name="toastBackground">@color/light_silver</item>
+        <item name="toastTextColor">@color/charcoal_grey</item>
+
+        <item name="dialogBackground">@color/ash_grey</item>
+        <item name="dialogTextColors">@color/light_silver</item>
+        <item name="dialogPositiveBackground">@color/light_silver</item>
+        <item name="dialogPositiveTextColor">@color/ash_grey</item>
+    </style>
+
+    <!-- No action bar - Base application theme -->
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorAccent">@color/charcoal_grey</item>
+        <item name="android:windowBackground">@color/off_white</item>
+        <item name="android:textColor">@color/charcoal_grey</item>
+        <item name="alertDialogTheme">@style/CustomDialogStyle</item>
+
+        <!-- Custom attributes -->
+        <item name="textInputBackground">@color/light_grey</item>
+        <item name="textInputHint">@color/medium_grey</item>
+        <item name="textInputStroke">@color/light_grey</item>
+        <item name="textInputStrokeFocused">@color/medium_grey</item>
+
+        <item name="confirmButtonBackground">@color/charcoal_grey</item>
+        <item name="confirmButtonTextColor">@color/light_silver</item>
+
+        <item name="toastBackground">@color/charcoal_grey</item>
+        <item name="toastTextColor">@color/light_silver</item>
+
+        <item name="dialogBackground">@color/off_white</item>
+        <item name="dialogTextColors">@color/charcoal_grey</item>
+        <item name="dialogPositiveBackground">@color/charcoal_grey</item>
+        <item name="dialogPositiveTextColor">@color/off_white</item>
+    </style>
+
+    <!-- No action bar - Light theme -->
+    <style name="AppTheme.NoActionBar.Light" parent="AppTheme.NoActionBar"/>
+
+    <!-- No action bar - Dark theme -->
+    <style name="AppTheme.NoActionBar.Dark" parent="AppTheme.NoActionBar">
+        <item name="colorAccent">@color/light_silver</item>
+        <item name="android:windowBackground">@color/ebony</item>
+        <item name="android:textColor">@color/light_silver</item>
+        <item name="alertDialogTheme">@style/CustomDialogStyle</item>
+
+        <!-- Custom attributes -->
+        <item name="textInputBackground">@color/ash_grey</item>
+        <item name="textInputHint">@color/slate_grey</item>
+        <item name="textInputStroke">@color/ash_grey</item>
+        <item name="textInputStrokeFocused">@color/gunmetal</item>
+
+        <item name="confirmButtonBackground">@color/charcoal_grey</item>
+        <item name="confirmButtonTextColor">@color/light_silver</item>
+
+        <item name="toastBackground">@color/light_silver</item>
+        <item name="toastTextColor">@color/charcoal_grey</item>
+
+        <item name="dialogBackground">@color/ash_grey</item>
+        <item name="dialogTextColors">@color/light_silver</item>
+        <item name="dialogPositiveBackground">@color/light_silver</item>
+        <item name="dialogPositiveTextColor">@color/ash_grey</item>
+    </style>
+</resources>
