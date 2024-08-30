@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Custom Toast Layout - little screen version -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="horizontal"
+    android:background="@drawable/toast_background"
+    android:layout_gravity="center_horizontal" >
+
+    <TextView
+        android:id="@+id/toast_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/toastTextColor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical"
+        android:gravity="center" />
+</LinearLayout>

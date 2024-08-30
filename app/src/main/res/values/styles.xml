@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ########## Custom styles ########## -->
+
+    <!-- Custom SwitchCompat style - Dark theme -->
+    <style name="CustomSwitch.Dark" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="trackTint">@color/medium_grey</item>
+        <item name="thumbTint">@color/light_grey</item>
+    </style>
+
+    <!-- Custom SwitchCompat style - Light theme -->
+    <style name="CustomSwitch.Light" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="trackTint">@color/mid_grey</item>
+        <item name="thumbTint">@color/charcoal_grey</item>
+    </style>
+
+    <!-- Custom SeekBar style - Light theme -->
+    <style name="CustomSeekBar.Light" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint">@color/mid_grey</item>
+        <item name="android:progressTint">@color/charcoal_grey</item>
+        <item name="android:thumbTint">@color/charcoal_grey</item>
+    </style>
+
+    <!-- Custom Spinner style - Dark theme -->
+    <style name="CustomSpinnerStyle.Dark" parent="Widget.AppCompat.Spinner">
+        <item name="android:popupBackground">@color/charcoal_grey</item>
+    </style>
+
+    <!-- Custom Spinner style - Light theme -->
+    <style name="CustomSpinnerStyle.Light" parent="Widget.AppCompat.Spinner">
+        <item name="android:popupBackground">@color/off_white</item>
+
+        <!-- icon color (triangle) -->
+        <item name="android:backgroundTint">@color/medium_grey</item>
+    </style>
+
+    <!-- Custom Dialog style - Darken background around dialog -->
+    <style name="CustomDialogStyle" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+
+    <!-- Custom Dialog style - Animation enter/exit -->
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+    </style>
+</resources>

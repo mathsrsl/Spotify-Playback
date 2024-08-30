@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Background for the custom toast -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="?attr/toastBackground"/>
+    <corners android:radius="999dp"/> <!-- Large radius to make the toast round like a pill -->
+</shape>

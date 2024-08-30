@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background of the progress bar (uncompleted part) -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+        <size android:height="4dp" />
+        <corners android:radius="20dp" />
+        <solid android:color="#A6E0E0E0" />
+        </shape>
+    </item>
+
+    <!-- Progress bar (completed part) -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <size android:height="4dp" />
+                <corners android:radius="20dp" />
+                <solid android:color="#FFFFFF" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

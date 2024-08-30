@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for the HomeActivity - tablet version -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".HomeActivity">
+
+    <!-- title of the page -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_main_title"
+        android:visibility="visible"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/home_explain_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="visible" />
+
+    <!-- explanation text for the user -->
+    <LinearLayout
+        android:id="@+id/home_explain_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/titleText"
+        app:layout_constraintBottom_toTopOf="@+id/client_id_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="visible"
+        tools:visibility="visible" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_home_explain_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:visibility="visible"
+            tools:visibility="visible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="@string/text_home_explain_step1"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <!-- copy button for step 1 -->
+            <ImageButton
+                android:id="@+id/copy_button_step1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:contentDescription="@string/text_copy_to_clipboard"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_copy_button_light"
+                android:visibility="visible"
+                tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="6dp"
+            android:visibility="visible"
+            tools:visibility="visible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="@string/text_home_explain_step2"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <!-- copy button for step 2 -->
+            <ImageButton
+                android:id="@+id/copy_button_step2"
+                android:layout_width="wrap_content"
+                android:layout_height="20sp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:contentDescription="@string/text_copy_to_clipboard"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_copy_button_light"
+                android:visibility="visible"
+                tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_home_explain_step3"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="6dp"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+    <!-- input field for client ID -->
+    <EditText
+        android:id="@+id/client_id_input"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        android:autofillHints=""
+        android:hint="@string/text_client_id_hint"
+        android:inputType="text"
+        android:visibility="visible"
+        android:textColor="?attr/android:textColor"
+        android:textColorHint="?attr/textInputHint"
+
+        app:layout_constraintTop_toBottomOf="@+id/home_explain_text"
+        app:layout_constraintBottom_toTopOf="@+id/submit_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/corners_edittext" />
+
+    <!-- submit button -->
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:minWidth="0dp"
+        android:minHeight="48dp"
+        android:text="@string/text_button_submit_activity_main"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:textColor="?attr/confirmButtonTextColor"
+        app:layout_constraintTop_toBottomOf="@+id/client_id_input"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/corners_confirm_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
